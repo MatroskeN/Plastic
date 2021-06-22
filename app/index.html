@@ -66,17 +66,22 @@
                         <line x1="6" y1="6.25" x2="10" y2="6.25" stroke="#0D0D0D" stroke-width="1.5"/>
                     </svg>
                 </a>
-                <a href="#" class="controls_items">
+                <a href="#" class="controls_items search">
                     <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="8.52512" cy="8.52512" r="7.52512" stroke="#0D0D0D" stroke-width="2"/>
                         <path d="M18.312 19.4004L14.3574 15.0503" stroke="#0D0D0D" stroke-width="2" stroke-linecap="round"/>
                     </svg>
                 </a>
-                <a href="#" class="controls_items">
+                <a href="#" class="controls_items burger">
                     <svg width="20" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect width="20" height="3" fill="#0D0D0D"/>
                         <rect y="6" width="20" height="3" fill="#0D0D0D"/>
                         <rect y="12" width="20" height="3" fill="#0D0D0D"/>
+                    </svg>
+                </a>
+                <a href="#" class="controls_items xclose">
+                    <svg width="40" height="39" viewBox="0 0 40 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M38.8799 2.38236C39.2727 1.9941 39.2763 1.36095 38.8881 0.968173C38.4998 0.575398 37.8667 0.571737 37.4739 0.959997L20.2741 17.962L2.58085 0.734432C2.18515 0.34915 1.55205 0.35759 1.16676 0.753287C0.781481 1.14898 0.789921 1.78209 1.18562 2.16737L18.8515 19.3683L0.757437 37.2543C0.364661 37.6426 0.361001 38.2757 0.749262 38.6685C1.13752 39.0613 1.77067 39.0649 2.16345 38.6767L20.2847 20.7638L37.7527 37.7721C38.1484 38.1574 38.7815 38.149 39.1668 37.7533C39.552 37.3576 39.5436 36.7245 39.1479 36.3392L21.7073 19.3575L38.8799 2.38236Z" fill="black"/>
                     </svg>
                 </a>
             </div>
@@ -86,7 +91,7 @@
         <div class="banner">
             <div class="swiper-container banner_swiper" id="slideMain">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide slider">
+                  <div class="swiper-slide slider" data-minipic="img/banner.png">
                     <div class="banner_slide">
                         <div class="banner_text">
                             <div class="banner_subtitle">
@@ -105,9 +110,53 @@
                         </div>
                         <div class="banner_mask">
                         </div>
-                        <img src="img/banner.png" alt="banner">
+                        <img class="banner_pic" src="img/banner.png" alt="banner">
                     </div>
-                  </div> 
+                  </div>
+                  <div class="swiper-slide slider" data-minipic="img/banner.png">
+                    <div class="banner_slide">
+                        <div class="banner_text">
+                            <div class="banner_subtitle">
+                                Производство и продажа
+                            </div>
+                            <div class="banner_title">
+                                Тонкие столешницы <br>
+                                из HPL пластика
+                            </div>
+                            <div class="banner_btn">
+                                <button>
+                                    <p>Посмотреть каталог</p>
+                                    <div class="line"></div>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="banner_mask">
+                        </div>
+                        <img class="banner_pic" src="img/banner.png" alt="banner">
+                    </div>
+                  </div>
+                  <div class="swiper-slide slider" data-minipic="img/banner.png">
+                    <div class="banner_slide">
+                        <div class="banner_text">
+                            <div class="banner_subtitle">
+                                Производство и продажа
+                            </div>
+                            <div class="banner_title">
+                                Тонкие столешницы <br>
+                                из HPL пластика
+                            </div>
+                            <div class="banner_btn">
+                                <button>
+                                    <p>Посмотреть каталог</p>
+                                    <div class="line"></div>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="banner_mask">
+                        </div>
+                        <img class="banner_pic" src="img/banner1.png" alt="banner">
+                    </div>
+                  </div>
                 </div>
             </div>
             <div class="banner_qualities">
@@ -239,6 +288,18 @@
                     </div>
                 </div>
             </div>
+            <div class="banner_navigation">
+                <div class="prev_arrow hover_arrow1">
+                    <svg width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11 1L1 11L11 21" stroke="#0D0D0D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="next_arrow hover_arrow2">
+                    <svg width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11 1L1 11L11 21" stroke="#0D0D0D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </div>
         </div>
         <div class="kitchen">
             <div class="kitchen_block">
@@ -311,49 +372,169 @@
                 <div class="catalog_items">
                     <div class="catalog_item">
                         <div class="catalog_mask">
-
+                            <div class="mask"></div>
+                            <div class="horizontal"></div>
+                            <div class="vertical"></div>
+                            <div class="more">
+                                <div class="line"></div>
+                                <a href="#">Подробнее</a>
+                            </div>
+                            <div class="mask_text">
+                                <div class="item_title">
+                                    Название товара
+                                </div>
+                                <div class="item_description">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor incididunt
+                                </div>
+                            </div>
                         </div>
                         <img src="img/catalog-pic.png" alt="catalog-pic">
                     </div>
                     <div class="catalog_item">
                         <div class="catalog_mask">
-                            
+                            <div class="mask"></div>
+                            <div class="horizontal"></div>
+                            <div class="vertical"></div>
+                            <div class="more">
+                                <div class="line"></div>
+                                <a href="#">Подробнее</a>
+                            </div>
+                            <div class="mask_text">
+                                <div class="item_title">
+                                    Название товара
+                                </div>
+                                <div class="item_description">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor incididunt
+                                </div>
+                            </div>
                         </div>
                         <img src="img/catalog-pic.png" alt="catalog-pic">
                     </div>
                     <div class="catalog_item">
                         <div class="catalog_mask">
-                            
+                            <div class="mask"></div>
+                            <div class="horizontal"></div>
+                            <div class="vertical"></div>
+                            <div class="more">
+                                <div class="line"></div>
+                                <a href="#">Подробнее</a>
+                            </div>
+                            <div class="mask_text">
+                                <div class="item_title">
+                                    Название товара
+                                </div>
+                                <div class="item_description">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor incididunt
+                                </div>
+                            </div>
                         </div>
                         <img src="img/catalog-pic.png" alt="catalog-pic">
                     </div>
                     <div class="catalog_item">
                         <div class="catalog_mask">
-                            
+                            <div class="mask"></div>
+                            <div class="horizontal"></div>
+                            <div class="vertical"></div>
+                            <div class="more">
+                                <div class="line"></div>
+                                <a href="#">Подробнее</a>
+                            </div>
+                            <div class="mask_text">
+                                <div class="item_title">
+                                    Название товара
+                                </div>
+                                <div class="item_description">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor incididunt
+                                </div>
+                            </div>
                         </div>
                         <img src="img/catalog-pic.png" alt="catalog-pic">
                     </div>
                     <div class="catalog_item">
                         <div class="catalog_mask">
-                            
+                            <div class="mask"></div>
+                            <div class="horizontal"></div>
+                            <div class="vertical"></div>
+                            <div class="more">
+                                <div class="line"></div>
+                                <a href="#">Подробнее</a>
+                            </div>
+                            <div class="mask_text">
+                                <div class="item_title">
+                                    Название товара
+                                </div>
+                                <div class="item_description">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor incididunt
+                                </div>
+                            </div>
                         </div>
                         <img src="img/catalog-pic.png" alt="catalog-pic">
                     </div>
                     <div class="catalog_item">
                         <div class="catalog_mask">
-                            
+                            <div class="mask"></div>
+                            <div class="horizontal"></div>
+                            <div class="vertical"></div>
+                            <div class="more">
+                                <div class="line"></div>
+                                <a href="#">Подробнее</a>
+                            </div>
+                            <div class="mask_text">
+                                <div class="item_title">
+                                    Название товара
+                                </div>
+                                <div class="item_description">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor incididunt
+                                </div>
+                            </div>
                         </div>
                         <img src="img/catalog-pic.png" alt="catalog-pic">
                     </div>
                     <div class="catalog_item">
                         <div class="catalog_mask">
-                            
+                            <div class="mask"></div>
+                            <div class="horizontal"></div>
+                            <div class="vertical"></div>
+                            <div class="more">
+                                <div class="line"></div>
+                                <a href="#">Подробнее</a>
+                            </div>
+                            <div class="mask_text">
+                                <div class="item_title">
+                                    Название товара
+                                </div>
+                                <div class="item_description">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor incididunt
+                                </div>
+                            </div>
                         </div>
                         <img src="img/catalog-pic.png" alt="catalog-pic">
                     </div>
                     <div class="catalog_item">
                         <div class="catalog_mask">
-                            
+                            <div class="mask"></div>
+                            <div class="horizontal"></div>
+                            <div class="vertical"></div>
+                            <div class="more">
+                                <div class="line"></div>
+                                <a href="#">Подробнее</a>
+                            </div>
+                            <div class="mask_text">
+                                <div class="item_title">
+                                    Название товара
+                                </div>
+                                <div class="item_description">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor incididunt
+                                </div>
+                            </div>
                         </div>
                         <img src="img/catalog-pic.png" alt="catalog-pic">
                     </div>
@@ -414,12 +595,29 @@
                             <div class="review_slide">
                                 <img src="img/review.png" alt="review">
                             </div>
+                          </div>
+                          <div class="swiper-slide slider">
+                            <div class="review_slide">
+                                <img src="img/review.png" alt="review">
+                            </div>
                           </div> 
                         </div>
                     </div>
                     <div class="review_more">
                         <div class="line"></div>
                         <p>Все отзывы</p>
+                    </div>
+                    <div class="review_navigation">
+                        <div class="prev_review">
+                            <svg width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11 1L1 11L11 21" stroke="#0D0D0D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="next_review">
+                            <svg width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11 1L1 11L11 21" stroke="#0D0D0D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -602,6 +800,87 @@
     </footer>
     <div class="basement">
         <a href="#">Copyright © 2021 Sensola. All Rights Reserved.</a>
+    </div>
+    <div class="search_window">
+        <div class="search_mask"></div>
+        <div class="search_close">
+            <svg width="40" height="39" viewBox="0 0 40 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M38.8799 2.38236C39.2727 1.9941 39.2763 1.36095 38.8881 0.968173C38.4998 0.575398 37.8667 0.571737 37.4739 0.959997L20.2741 17.962L2.58085 0.734432C2.18515 0.34915 1.55205 0.35759 1.16676 0.753287C0.781481 1.14898 0.789921 1.78209 1.18562 2.16737L18.8515 19.3683L0.757437 37.2543C0.364661 37.6426 0.361001 38.2757 0.749262 38.6685C1.13752 39.0613 1.77067 39.0649 2.16345 38.6767L20.2847 20.7638L37.7527 37.7721C38.1484 38.1574 38.7815 38.149 39.1668 37.7533C39.552 37.3576 39.5436 36.7245 39.1479 36.3392L21.7073 19.3575L38.8799 2.38236Z" fill="white"/>
+            </svg>
+        </div>
+        <div class="search_form">
+            <input type="text" name="search" id="search" placeholder="Что Вы ищете?">
+            <button class="search_btn">
+                <svg width="47" height="50" viewBox="0 0 47 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="19.85" cy="19.9166" r="18.35" stroke="white" stroke-width="3"/>
+                    <path d="M45.1242 47.9999L34.9121 36.7666" stroke="white" stroke-width="3" stroke-linecap="round"/>
+                </svg>
+            </button>
+        </div>
+        <div class="popular">
+            <p class="popular_title">Популярное</p>
+            <div class="item_name">Название категории</div>
+            <div class="item_name">Название столешницы</div>
+            <div class="item_name">Название материала</div>
+            <div class="item_name">Название бренда</div>
+        </div>
+    </div>
+    <div class="burger_window">
+        <div class="burger_catalog">
+            <div class="catalog_item">
+                <div class="catalog_title">
+                    <p>Каталог</p>
+                    <svg width="17" height="11" viewBox="0 0 17 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.5 1.5L8.5 8.5L1.5 1.5" stroke="#0D0D0D" stroke-width="3.5"/>
+                    </svg>
+                </div>
+                <div class="catalog_subitem first_child">Раздел каталога номер 1</div>
+                <div class="catalog_subitem">Раздел каталога номер 2</div>
+                <div class="catalog_subitem">Раздел каталога номер 3</div>
+            </div>
+            <div class="catalog_item">
+                <div class="catalog_title">
+                    <p>Отзывы</p>
+                    <svg width="17" height="11" viewBox="0 0 17 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.5 1.5L8.5 8.5L1.5 1.5" stroke="#0D0D0D" stroke-width="3.5"/>
+                    </svg>
+                </div>
+                <div class="catalog_subitem first_child">Раздел каталога номер 1</div>
+                <div class="catalog_subitem">Раздел каталога номер 2</div>
+                <div class="catalog_subitem">Раздел каталога номер 3</div>
+            </div>
+            <div class="catalog_item">
+                <div class="catalog_title">
+                    <p>Статьи</p>
+                    <svg width="17" height="11" viewBox="0 0 17 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.5 1.5L8.5 8.5L1.5 1.5" stroke="#0D0D0D" stroke-width="3.5"/>
+                    </svg>
+                </div>
+                <div class="catalog_subitem first_child">Раздел каталога номер 1</div>
+                <div class="catalog_subitem">Раздел каталога номер 2</div>
+                <div class="catalog_subitem">Раздел каталога номер 3</div>
+            </div>
+            <div class="catalog_item">
+                <div class="catalog_title">
+                    <p>Контакты</p>
+                    <svg width="17" height="11" viewBox="0 0 17 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.5 1.5L8.5 8.5L1.5 1.5" stroke="#0D0D0D" stroke-width="3.5"/>
+                    </svg>
+                </div>
+                <div class="catalog_subitem first_child">Раздел каталога номер 1</div>
+                <div class="catalog_subitem">Раздел каталога номер 2</div>
+                <div class="catalog_subitem">Раздел каталога номер 3</div>
+            </div>
+        </div>
+        <hr>
+        <div class="burger_links">
+            <a href="#">
+                <img src="img/Insta.svg" alt="inst">
+            </a>
+            <a href="#">
+                <img src="img/WhatsApp.svg" alt="whatap">
+            </a>                         
+        </div>
     </div>
     <!-- scripts -->
     <script src="js/main.js"></script>
